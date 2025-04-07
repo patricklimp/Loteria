@@ -1,4 +1,4 @@
-function sortearNumeros (){
+function sortearNumeros() {
     const resultado = document.getElementById("resultado");
     resultado.innerHTML = "";
 
@@ -11,10 +11,11 @@ function sortearNumeros (){
         }
     }
 
-    numeros.forEach(numero => {
+    numeros.forEach((numero, index) => {
         const bolinha = document.createElement("div");
         bolinha.className = "numero";
         bolinha.textContent = numero;
-        resultado.appendChild (bolinha);
-    })
+        bolinha.style.animationDelay = `${index * 0.3}s`;
+        resultado.appendChild(bolinha);
+    });
 }
