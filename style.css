@@ -31,6 +31,8 @@ body {
       0 0 10px #178545,                /* brilho externo */
       inset 0 0 5px rgba(0, 0, 0, 0.05); /* leve sombra interna pra profundidade */
     animation: brilho 2s infinite ease-in-out;
+    animation: girarEntrando 0.5s ease-out forwards;
+    opacity: 0;
   }
   
   button {
@@ -71,9 +73,4 @@ body {
       transform: rotateY(0deg) scale(1);
       opacity: 1;
     }
-  }
-  
-  .numero {
-    animation: girarEntrando 0.5s ease-out forwards;
-    opacity: 0;
   }
